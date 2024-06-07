@@ -3,23 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Website</title>
+    <title>Elegant Blockchain Website</title>
     <base href="/">
     <link type="text/css" rel="stylesheet" href="main.css" />
 </head>
 <body>
     <header>
         <img src="logo.png" alt="DFINITY logo" class="logo" />
-        <h1>Welcome to My Blockchain-based Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
+        <section id="hero">
+            <h1>Welcome to My Blockchain-based Website</h1>
+            <p>Experience the future of the internet with decentralization and security.</p>
+            <button onclick="alert('Hello, Blockchain!')">Learn More</button>
+        </section>
+        <section id="about">
             <h2>About This Website</h2>
             <p>This website is hosted on a blockchain network, ensuring decentralization and security.</p>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Decentralized Hosting</li>
+                <li>Enhanced Security</li>
+                <li>Immutable Content</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 My Blockchain Website</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
